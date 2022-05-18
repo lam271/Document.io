@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <nav class="container">
+          <a href="" class="logo">
+            <img src="./img/logo.png" alt="Logo" />
+          </a>
+          <ul class="main-menu">
+            <li><a href="">About</a></li>
+            <li>
+              <a href="">Html</a>
+              <ul class="sub-menu">
+                <li><a href="">Menu 2.1</a></li>
+                <li>
+                  <a href="">Menu 2.2</a>
+                  <ul class="sub-menu">
+                    <li><a href="">Menu 2.2.1</a></li>
+                    <li><a href="">Menu 2.2.2</a></li>
+                    <li><a href="">Menu 2.2.3</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Menu 2.2.1</a></li>
+                            <li><a href="">Menu 2.2.2</a></li>
+                            <li><a href="">Menu 2.2.3</a></li>
+                            <li><a href="">Menu 2.2.4</a></li>
+                          </ul>
+                    </li>
+                    <li><a href="">Menu 2.2.4</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Menu 2.3</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Menu 2.2.1</a></li>
+                        <li><a href="">Menu 2.2.2</a></li>
+                        <li><a href="">Menu 2.2.3</a></li>
+                        <li><a href="">Menu 2.2.4</a></li>
+                      </ul>
+                </li>
+                <li><a href="">Menu 2.4</a></li>
+              </ul>
+            </li>
+            <li><a href="">Css</a></li>
+            <li>
+              <a href="">Php</a>
+              <ul class="sub-menu">
+                <li><a href="">Menu 2.1</a></li>
+                <li>
+                  <a href="">Menu 2.2</a>
+                  <ul class="sub-menu">
+                    <li><a href="">Menu 2.2.1</a></li>
+                    <li><a href="">Menu 2.2.2</a></li>
+                    <li><a href="">Menu 2.2.3</a></li>
+                    <li><a href="">Menu 2.2.4</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Menu 2.3</a></li>
+                <li><a href="">Menu 2.4</a></li>
+              </ul>
+            </li>
+            <li><a href="">Laravel</a></li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Javascript</a></li>
+            <li><a href="">Project</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function(){
+        // Tim tat ca cac li co sub-menu va them vao no class has-child
+        $('.sub-menu').parent('li').addClass('has-child');
+      });
+  </script>
+</html>
